@@ -35,7 +35,7 @@ def gotoPictures():
 
 def delFiles(include):
 
-    for elems in os.listdir():
+    for elems in os.listdir("./"):
 
         if include in elems:
             os.system('rm "{}"'.format(str(elems)))
